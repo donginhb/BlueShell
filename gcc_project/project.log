@@ -1,0 +1,7 @@
+
+!CONFIGURATION: 'com.ti.ccstudio.buildDefinitions.C2000.Release.565615457' [Thu May 10 16:02:16 CST 2018]
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_16.9.exe.compilerRelease.1805713071'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_16.9.exe.compilerRelease.1805713071::!--symdebug:dwarf
+

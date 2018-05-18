@@ -1,0 +1,876 @@
+-------------------------  gcc_project.pjt - Release  -------------------------
+[CLARKE_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "CLARKE_F.c"
+"CLARKE_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "CLARKE_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[CNTL_PI_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "CNTL_PI_F.c"
+"CNTL_PI_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "CNTL_PI_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[CNTL_PR_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "CNTL_PR_F.c"
+"CNTL_PR_F.c", line 20: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "CNTL_PR_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[cos_f32.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "cos_f32.asm"
+"cos_f32.asm", ERROR!   at line 62: [E0003] Syntax error - Operand 1
+	        MOVIZ     R1H,#0x42A2        ; R1H = 512/(2*pi) = 512/6.28318531 = 81.4873309
+
+"cos_f32.asm", ERROR!   at line 62: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R1H,#0x42A2        ; R1H = 512/(2*pi) = 512/6.28318531 = 81.4873309
+
+"cos_f32.asm", ERROR!   at line 63: [E0003] Syntax error - Operand 1
+	        MOVXI     R1H,#0xF983
+
+"cos_f32.asm", ERROR!   at line 63: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R1H,#0xF983
+
+"cos_f32.asm", ERROR!   at line 64: [E0003] Syntax error - Operand 1
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"cos_f32.asm", ERROR!   at line 64: [E0003] Invalid immediate value
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"cos_f32.asm", ERROR!   at line 64: [E0003] Invalid immediate value
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"cos_f32.asm", ERROR!   at line 64: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"cos_f32.asm", ERROR!   at line 64: [E0004] Illegal operand combination
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"cos_f32.asm", ERROR!   at line 65: [E0003] Syntax error - Operand 1
+	        MOVIZ     R2H,#0x3C49        ; R2H = (2*pi)/512 = 6.28318531/512
+
+"cos_f32.asm", ERROR!   at line 65: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R2H,#0x3C49        ; R2H = (2*pi)/512 = 6.28318531/512
+
+"cos_f32.asm", ERROR!   at line 66: [E0003] Syntax error - Operand 1
+	        MOVXI     R2H,#0x0FDB        ;     = 0x3C490FDB or 0.012271846644531
+
+"cos_f32.asm", ERROR!   at line 66: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R2H,#0x0FDB        ;     = 0x3C490FDB or 0.012271846644531
+
+"cos_f32.asm", ERROR!   at line 67: [E0003] Syntax error - Operand 1
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 67: [E0003] Syntax error - Operand 2
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 67: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 70: [E0003] Syntax error - Operand 2
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 70: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 70: [E0004] Illegal operand combination
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 74: [E0003] Syntax error - Operand 1
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 74: [E0003] Syntax error - Operand 2
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 74: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"cos_f32.asm", ERROR!   at line 75: [E0003] Syntax error - Operand 1
+	        MOVIZ     R3H,#0x3E2A        ; R3H = 0.166667 (0x3E2AAAAB)
+
+"cos_f32.asm", ERROR!   at line 75: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R3H,#0x3E2A        ; R3H = 0.166667 (0x3E2AAAAB)
+
+"cos_f32.asm", ERROR!   at line 76: [E0003] Syntax error - Operand 1
+	        MOVXI     R3H,#0xAAAB
+
+"cos_f32.asm", ERROR!   at line 76: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R3H,#0xAAAB
+
+"cos_f32.asm", ERROR!   at line 77: [E0003] Syntax error - Operand 1
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"cos_f32.asm", ERROR!   at line 77: [E0003] Invalid immediate value
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"cos_f32.asm", ERROR!   at line 77: [E0003] Invalid immediate value
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"cos_f32.asm", ERROR!   at line 77: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"cos_f32.asm", ERROR!   at line 78: [E0003] Syntax error - Operand 1
+	     || MOV32     R1H,*+XAR6[AR0]    ; R1H = S(k)
+
+"cos_f32.asm", ERROR!   at line 78: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R1H,*+XAR6[AR0]    ; R1H = S(k)
+
+"cos_f32.asm", ERROR!   at line 77: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"cos_f32.asm", ERROR!   at line 79: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R3H, R1H      ; R3H = .166*C(k)
+
+"cos_f32.asm", ERROR!   at line 79: [E0003] Invalid immediate value
+	        MPYF32    R3H, R3H, R1H      ; R3H = .166*C(k)
+
+"cos_f32.asm", ERROR!   at line 79: [E0003] Invalid immediate value
+	        MPYF32    R3H, R3H, R1H      ; R3H = .166*C(k)
+
+"cos_f32.asm", ERROR!   at line 79: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R3H, R1H      ; R3H = .166*C(k)
+
+"cos_f32.asm", ERROR!   at line 80: [E0003] Syntax error - Operand 1
+	     || MOV32     R0H,*+XAR7[AR0]    ; R0H = C(k)
+
+"cos_f32.asm", ERROR!   at line 80: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R0H,*+XAR7[AR0]    ; R0H = C(k)
+
+"cos_f32.asm", ERROR!   at line 79: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R3H, R1H      ; R3H = .166*C(k)
+
+"cos_f32.asm", ERROR!   at line 81: [E0003] Syntax error - Operand 1
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*C(k)
+
+"cos_f32.asm", ERROR!   at line 81: [E0003] Invalid immediate value
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*C(k)
+
+"cos_f32.asm", ERROR!   at line 81: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*C(k)
+
+"cos_f32.asm", ERROR!   at line 81: [E0004] Illegal operand combination
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*C(k)
+
+"cos_f32.asm", ERROR!   at line 82: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*S(k)
+
+"cos_f32.asm", ERROR!   at line 82: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*S(k)
+
+"cos_f32.asm", ERROR!   at line 82: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*S(k)
+
+"cos_f32.asm", ERROR!   at line 82: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*S(k)
+
+"cos_f32.asm", ERROR!   at line 82: [E0004] Illegal operand combination
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*S(k)
+
+"cos_f32.asm", ERROR!   at line 84: [E0003] Syntax error - Operand 1
+	        ADDF32    R0H, R0H, R3H      ; R0H = -.5*C(k) + 0.166667*x*S(k)
+
+"cos_f32.asm", ERROR!   at line 84: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = -.5*C(k) + 0.166667*x*S(k)
+
+"cos_f32.asm", ERROR!   at line 84: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = -.5*C(k) + 0.166667*x*S(k)
+
+"cos_f32.asm", ERROR!   at line 84: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        ADDF32    R0H, R0H, R3H      ; R0H = -.5*C(k) + 0.166667*x*S(k)
+
+"cos_f32.asm", ERROR!   at line 84: [E0004] Illegal operand combination
+	        ADDF32    R0H, R0H, R3H      ; R0H = -.5*C(k) + 0.166667*x*S(k)
+
+"cos_f32.asm", ERROR!   at line 86: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 86: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 86: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 86: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 87: [E0003] Syntax error - Operand 1
+	     || MOV32     R1H, *+XAR6[AR0]   ; R1H = S(k)
+
+"cos_f32.asm", ERROR!   at line 87: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R1H, *+XAR6[AR0]   ; R1H = S(k)
+
+"cos_f32.asm", ERROR!   at line 86: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 89: [E0003] Syntax error - Operand 1
+	        SUBF32    R3H, R3H, R1H      ; R3H = -S(k) + x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 89: [E0003] Invalid immediate value
+	        SUBF32    R3H, R3H, R1H      ; R3H = -S(k) + x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 89: [E0003] Invalid immediate value
+	        SUBF32    R3H, R3H, R1H      ; R3H = -S(k) + x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 89: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        SUBF32    R3H, R3H, R1H      ; R3H = -S(k) + x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 89: [E0004] Illegal operand combination
+	        SUBF32    R3H, R3H, R1H      ; R3H = -S(k) + x*(-.5*C(k) + 0.166667*x*S(k))
+
+"cos_f32.asm", ERROR!   at line 91: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 91: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 91: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 91: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 92: [E0003] Syntax error - Operand 1
+	     || MOV32     R0H, *+XAR7[AR0]   ; R0H = C(k)
+
+"cos_f32.asm", ERROR!   at line 92: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R0H, *+XAR7[AR0]   ; R0H = C(k)
+
+"cos_f32.asm", ERROR!   at line 91: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 94: [E0003] Syntax error - Operand 1
+	        ADDF32    R0H, R0H, R3H      ; R0H = cos(Radian) = C(k) + x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 94: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = cos(Radian) = C(k) + x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 94: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = cos(Radian) = C(k) + x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 94: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        ADDF32    R0H, R0H, R3H      ; R0H = cos(Radian) = C(k) + x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at line 94: [E0004] Illegal operand combination
+	        ADDF32    R0H, R0H, R3H      ; R0H = cos(Radian) = C(k) + x*(-S(k) + x*(-.5*C(k) + 0.166667*x*S(k)))
+
+"cos_f32.asm", ERROR!   at EOF: [E0300] The following symbols are undefined:
+79 Assembly Errors, No Assembly Warnings
+  R2H
+  R0H
+  R3H
+  R1H
+
+Errors in Source - Assembler Aborted
+
+>> Compilation failure
+
+[div_f32.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "div_f32.asm"
+"div_f32.asm", ERROR!   at line 52: [E0003] Syntax error - Operand 1
+	        EINVF32     R2H, R1H            ; R2H = Ye = Estimate(1/B)
+
+"div_f32.asm", ERROR!   at line 52: [E0003] Syntax error - Operand 2
+	        EINVF32     R2H, R1H            ; R2H = Ye = Estimate(1/B)
+
+"div_f32.asm", ERROR!   at line 52: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        EINVF32     R2H, R1H            ; R2H = Ye = Estimate(1/B)
+
+"div_f32.asm", ERROR!   at line 53: [E0003] Syntax error - Operand 1
+	        CMPF32      R0H, #0.0           ; Check if A == 0
+
+"div_f32.asm", ERROR!   at line 53: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        CMPF32      R0H, #0.0           ; Check if A == 0
+
+"div_f32.asm", ERROR!   at line 53: [E0004] Illegal operand combination
+	        CMPF32      R0H, #0.0           ; Check if A == 0
+
+"div_f32.asm", ERROR!   at line 54: [E0003] Syntax error - Operand 1
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 54: [E0003] Invalid immediate value
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 54: [E0003] Invalid immediate value
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 54: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 54: [E0004] Illegal operand combination
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 56: [E0003] Syntax error - Operand 1
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B       
+
+"div_f32.asm", ERROR!   at line 56: [E0003] Invalid immediate value
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B       
+
+"div_f32.asm", ERROR!   at line 56: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B       
+
+"div_f32.asm", ERROR!   at line 56: [E0004] Illegal operand combination
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B       
+
+"div_f32.asm", ERROR!   at line 58: [E0003] Syntax error - Operand 1
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 58: [E0003] Invalid immediate value
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 58: [E0003] Invalid immediate value
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 58: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 58: [E0004] Illegal operand combination
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 63: [E0003] Syntax error - Operand 1
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 63: [E0003] Invalid immediate value
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 63: [E0003] Invalid immediate value
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 63: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 63: [E0004] Illegal operand combination
+	        MPYF32      R3H, R2H, R1H       ; R3H = Ye*B
+
+"div_f32.asm", ERROR!   at line 64: [E0003] Syntax error - Operand 1
+	        CMPF32      R1H, #0.0           ; Check if B == 0.0
+
+"div_f32.asm", ERROR!   at line 64: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        CMPF32      R1H, #0.0           ; Check if B == 0.0
+
+"div_f32.asm", ERROR!   at line 64: [E0004] Illegal operand combination
+	        CMPF32      R1H, #0.0           ; Check if B == 0.0
+
+"div_f32.asm", ERROR!   at line 65: [E0003] Syntax error - Operand 1
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B
+
+"div_f32.asm", ERROR!   at line 65: [E0003] Invalid immediate value
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B
+
+"div_f32.asm", ERROR!   at line 65: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B
+
+"div_f32.asm", ERROR!   at line 65: [E0004] Illegal operand combination
+	        SUBF32      R3H, #2.0, R3H      ; R3H = 2.0 - Ye*B
+
+"div_f32.asm", ERROR!   at line 66: [E0003] Syntax error - Operand 1
+	        NEGF32      R0H, R0H, EQ        ; Fixes sign for A/0.0
+
+"div_f32.asm", ERROR!   at line 66: [E0003] Syntax error - Operand 2
+	        NEGF32      R0H, R0H, EQ        ; Fixes sign for A/0.0
+
+"div_f32.asm", ERROR!   at line 66: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        NEGF32      R0H, R0H, EQ        ; Fixes sign for A/0.0
+
+"div_f32.asm", ERROR!   at line 67: [E0003] Syntax error - Operand 1
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 67: [E0003] Invalid immediate value
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 67: [E0003] Invalid immediate value
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 67: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 67: [E0004] Illegal operand combination
+	        MPYF32      R2H, R2H, R3H       ; R2H = Ye = Ye*(2.0 - Ye*B)
+
+"div_f32.asm", ERROR!   at line 69: [E0003] Syntax error - Operand 1
+	        MPYF32      R0H, R0H, R2H       ; R0H = Y = A*Ye = A/B
+
+"div_f32.asm", ERROR!   at line 69: [E0003] Invalid immediate value
+	        MPYF32      R0H, R0H, R2H       ; R0H = Y = A*Ye = A/B
+
+"div_f32.asm", ERROR!   at line 69: [E0003] Invalid immediate value
+	        MPYF32      R0H, R0H, R2H       ; R0H = Y = A*Ye = A/B
+
+"div_f32.asm", ERROR!   at line 69: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32      R0H, R0H, R2H       ; R0H = Y = A*Ye = A/B
+
+"div_f32.asm", ERROR!   at line 69: [E0004] Illegal operand combination
+	        MPYF32      R0H, R0H, R2H       ; R0H = Y = A*Ye = A/B
+
+"div_f32.asm", ERROR!   at EOF: [E0300] The following symbols are undefined:
+46 Assembly Errors, No Assembly Warnings
+  R2H
+  R0H
+  R3H
+  R1H
+
+Errors in Source - Assembler Aborted
+
+>> Compilation failure
+
+[DSP2833x_ADC_cal.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_ADC_cal.asm"
+
+[DSP2833x_CodeStartBranch.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_CodeStartBranch.asm"
+
+[DSP2833x_EPwm.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_EPwm.c"
+"DSP2833x_EPwm.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_EPwm.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_GlobalVariableDefs.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_GlobalVariableDefs.c"
+"DSP2833x_GlobalVariableDefs.c", line 10: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_GlobalVariableDefs.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_Gpio.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_Gpio.c"
+"DSP2833x_Gpio.c", line 14: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_Gpio.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_MemCopy.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_MemCopy.c"
+"DSP2833x_MemCopy.c", line 30: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_MemCopy.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_PieCtrl.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_PieCtrl.c"
+"DSP2833x_PieCtrl.c", line 10: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_PieCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_SWPrioritizedDefaultIsr.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_SWPrioritizedDefaultIsr.c"
+"DSP2833x_SWPrioritizedDefaultIsr.c", line 16: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_SWPrioritizedDefaultIsr.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_SWPrioritizedPieVect.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_SWPrioritizedPieVect.c"
+"DSP2833x_SWPrioritizedPieVect.c", line 17: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_SWPrioritizedPieVect.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_SysCtrl.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_SysCtrl.c"
+"DSP2833x_SysCtrl.c", line 11: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_SysCtrl.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[DSP2833x_usDelay.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_usDelay.asm"
+
+[DSP2833x_Xintf.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "DSP2833x_Xintf.c"
+"DSP2833x_Xintf.c", line 21: fatal error: could not open source file "DSP2833x_Device.h"
+1 fatal error detected in the compilation of "DSP2833x_Xintf.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[filter.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "filter.c"
+"filter.c", line 19: fatal error: could not open source file "Filter.h"
+1 fatal error detected in the compilation of "filter.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[FPUmathTables.ASM] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "FPUmathTables.ASM"
+
+[gcc_main.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "gcc_main.c"
+"gcc_main.c", line 113: fatal error: could not open source file "DSP28x_Project.h"
+1 fatal error detected in the compilation of "gcc_main.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[iCLARKE_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "iCLARKE_F.c"
+"iCLARKE_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "iCLARKE_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[Insulation_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "Insulation_F.c"
+"Insulation_F.c", line 3: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "Insulation_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[integral.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "integral.c"
+"integral.c", line 18: fatal error: could not open source file "integral.h"
+1 fatal error detected in the compilation of "integral.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[iPARK_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "iPARK_F.c"
+"iPARK_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "iPARK_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[MPPT.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "MPPT.c"
+"MPPT.c", line 11: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "MPPT.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[PARK_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "PARK_F.c"
+"PARK_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "PARK_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[RMS.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "RMS.c"
+"RMS.c", line 1: fatal error: could not open source file "RMS.h"
+1 fatal error detected in the compilation of "RMS.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[sin_f32.asm] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "sin_f32.asm"
+"sin_f32.asm", ERROR!   at line 62: [E0003] Syntax error - Operand 1
+	        MOVIZ     R1H,#0x42A2        ; R1H = 512/(2*pi) = 512/6.28318531 = 81.4873309
+
+"sin_f32.asm", ERROR!   at line 62: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R1H,#0x42A2        ; R1H = 512/(2*pi) = 512/6.28318531 = 81.4873309
+
+"sin_f32.asm", ERROR!   at line 63: [E0003] Syntax error - Operand 1
+	        MOVXI     R1H,#0xF983
+
+"sin_f32.asm", ERROR!   at line 63: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R1H,#0xF983
+
+"sin_f32.asm", ERROR!   at line 64: [E0003] Syntax error - Operand 1
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"sin_f32.asm", ERROR!   at line 64: [E0003] Invalid immediate value
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"sin_f32.asm", ERROR!   at line 64: [E0003] Invalid immediate value
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"sin_f32.asm", ERROR!   at line 64: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"sin_f32.asm", ERROR!   at line 64: [E0004] Illegal operand combination
+	        MPYF32    R0H, R0H, R1H      ; R0H = Radian * 512/(2*pi)
+
+"sin_f32.asm", ERROR!   at line 65: [E0003] Syntax error - Operand 1
+	        MOVIZ     R2H,#0x3C49        ; R2H = (2*pi)/512 = 6.28318531/512
+
+"sin_f32.asm", ERROR!   at line 65: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R2H,#0x3C49        ; R2H = (2*pi)/512 = 6.28318531/512
+
+"sin_f32.asm", ERROR!   at line 66: [E0003] Syntax error - Operand 1
+	        MOVXI     R2H,#0x0FDB        ;     = 0x3C490FDB or 0.012271846644531
+
+"sin_f32.asm", ERROR!   at line 66: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R2H,#0x0FDB        ;     = 0x3C490FDB or 0.012271846644531
+
+"sin_f32.asm", ERROR!   at line 67: [E0003] Syntax error - Operand 1
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 67: [E0003] Syntax error - Operand 2
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 67: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        F32TOI32  R1H, R0H           ; R1H = int(Radian * 512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 70: [E0003] Syntax error - Operand 2
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 70: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 70: [E0004] Illegal operand combination
+	        MOV32     ACC, R1H           ; ACC = int(Radian *512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 74: [E0003] Syntax error - Operand 1
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 74: [E0003] Syntax error - Operand 2
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 74: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        FRACF32   R0H, R0H           ; R0H = fract(Radian*512/(2*pi))
+
+"sin_f32.asm", ERROR!   at line 75: [E0003] Syntax error - Operand 1
+	        MOVIZ     R3H,#0x3E2A        ; R3H = 0.166667 (0x3E2AAAAB)
+
+"sin_f32.asm", ERROR!   at line 75: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVIZ     R3H,#0x3E2A        ; R3H = 0.166667 (0x3E2AAAAB)
+
+"sin_f32.asm", ERROR!   at line 76: [E0003] Syntax error - Operand 1
+	        MOVXI     R3H,#0xAAAB
+
+"sin_f32.asm", ERROR!   at line 76: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MOVXI     R3H,#0xAAAB
+
+"sin_f32.asm", ERROR!   at line 77: [E0003] Syntax error - Operand 1
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"sin_f32.asm", ERROR!   at line 77: [E0003] Invalid immediate value
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"sin_f32.asm", ERROR!   at line 77: [E0003] Invalid immediate value
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"sin_f32.asm", ERROR!   at line 77: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"sin_f32.asm", ERROR!   at line 78: [E0003] Syntax error - Operand 1
+	     || MOV32     R1H,*+XAR6[AR0]    ; R1H = C(k)
+
+"sin_f32.asm", ERROR!   at line 78: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R1H,*+XAR6[AR0]    ; R1H = C(k)
+
+"sin_f32.asm", ERROR!   at line 77: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R2H, R0H, R2H      ; R2H = x = fract(Radian*512/(2*pi)) * (2*pi)/512
+
+"sin_f32.asm", ERROR!   at line 79: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R3H, R1H      ; R3H = 0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 79: [E0003] Invalid immediate value
+	        MPYF32    R3H, R3H, R1H      ; R3H = 0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 79: [E0003] Invalid immediate value
+	        MPYF32    R3H, R3H, R1H      ; R3H = 0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 79: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R3H, R1H      ; R3H = 0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 80: [E0003] Syntax error - Operand 1
+	     || MOV32     R0H,*+XAR7[AR0]    ; R0H = S(k)
+
+"sin_f32.asm", ERROR!   at line 80: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R0H,*+XAR7[AR0]    ; R0H = S(k)
+
+"sin_f32.asm", ERROR!   at line 79: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R3H, R1H      ; R3H = 0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 81: [E0003] Syntax error - Operand 1
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*S(k)
+
+"sin_f32.asm", ERROR!   at line 81: [E0003] Invalid immediate value
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*S(k)
+
+"sin_f32.asm", ERROR!   at line 81: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*S(k)
+
+"sin_f32.asm", ERROR!   at line 81: [E0004] Illegal operand combination
+	        MPYF32    R0H, -0.5, R0H     ; R0H = -.5*S(k)
+
+"sin_f32.asm", ERROR!   at line 82: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 82: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 82: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 82: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 82: [E0004] Illegal operand combination
+	        MPYF32    R3H, R2H, R3H      ; R1H = x*0.166667*C(k)
+
+"sin_f32.asm", ERROR!   at line 84: [E0003] Syntax error - Operand 1
+	        SUBF32    R0H, R0H, R3H      ; R0H = -.5*S(k) - 0.166667*x*C(k)
+
+"sin_f32.asm", ERROR!   at line 84: [E0003] Invalid immediate value
+	        SUBF32    R0H, R0H, R3H      ; R0H = -.5*S(k) - 0.166667*x*C(k)
+
+"sin_f32.asm", ERROR!   at line 84: [E0003] Invalid immediate value
+	        SUBF32    R0H, R0H, R3H      ; R0H = -.5*S(k) - 0.166667*x*C(k)
+
+"sin_f32.asm", ERROR!   at line 84: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        SUBF32    R0H, R0H, R3H      ; R0H = -.5*S(k) - 0.166667*x*C(k)
+
+"sin_f32.asm", ERROR!   at line 84: [E0004] Illegal operand combination
+	        SUBF32    R0H, R0H, R3H      ; R0H = -.5*S(k) - 0.166667*x*C(k)
+
+"sin_f32.asm", ERROR!   at line 86: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 86: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 86: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 86: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 87: [E0003] Syntax error - Operand 1
+	     || MOV32     R1H, *+XAR6[AR0]   ; R1H = C(k)
+
+"sin_f32.asm", ERROR!   at line 87: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R1H, *+XAR6[AR0]   ; R1H = C(k)
+
+"sin_f32.asm", ERROR!   at line 86: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R2H, R0H      ; R3H = x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 89: [E0003] Syntax error - Operand 1
+	        ADDF32    R3H, R1H, R3H      ; R3H = C(k) + x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 89: [E0003] Invalid immediate value
+	        ADDF32    R3H, R1H, R3H      ; R3H = C(k) + x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 89: [E0003] Invalid immediate value
+	        ADDF32    R3H, R1H, R3H      ; R3H = C(k) + x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 89: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        ADDF32    R3H, R1H, R3H      ; R3H = C(k) + x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 89: [E0004] Illegal operand combination
+	        ADDF32    R3H, R1H, R3H      ; R3H = C(k) + x*(-.5*S(k) - 0.166667*x*C(k))
+
+"sin_f32.asm", ERROR!   at line 91: [E0003] Syntax error - Operand 1
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 91: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 91: [E0003] Invalid immediate value
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 91: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 92: [E0003] Syntax error - Operand 1
+	     || MOV32     R0H, *+XAR7[AR0]   ; R0H = S(k)
+
+"sin_f32.asm", ERROR!   at line 92: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	     || MOV32     R0H, *+XAR7[AR0]   ; R0H = S(k)
+
+"sin_f32.asm", ERROR!   at line 91: [E0802] Incorrect instruction used in
+                                            parallel
+	        MPYF32    R3H, R2H, R3H      ; R3H = x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 94: [E0003] Syntax error - Operand 1
+	        ADDF32    R0H, R0H, R3H      ; R0H = sin(Radian) = S(k) + x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 94: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = sin(Radian) = S(k) + x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 94: [E0003] Invalid immediate value
+	        ADDF32    R0H, R0H, R3H      ; R0H = sin(Radian) = S(k) + x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 94: [E0002] Invalid instruction for specified
+                                            floating point accelerator
+	        ADDF32    R0H, R0H, R3H      ; R0H = sin(Radian) = S(k) + x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at line 94: [E0004] Illegal operand combination
+	        ADDF32    R0H, R0H, R3H      ; R0H = sin(Radian) = S(k) + x*(C(k) + x*(-.5*S(k) - 0.166667*x*C(k)))
+
+"sin_f32.asm", ERROR!   at EOF: [E0300] The following symbols are undefined:
+79 Assembly Errors, No Assembly Warnings
+  R2H
+  R0H
+  R3H
+  R1H
+
+Errors in Source - Assembler Aborted
+
+>> Compilation failure
+
+[SPLL_3PH_SRF_F.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "SPLL_3PH_SRF_F.c"
+"SPLL_3PH_SRF_F.c", line 1: fatal error: could not open source file "Solar_F.h"
+1 fatal error detected in the compilation of "SPLL_3PH_SRF_F.c".
+Compilation terminated.
+
+>> Compilation failure
+
+[svpwm_npc.c] "C:\Program Files\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -pdsw225 -o3 -fr"D:/Test_Program/30kw/Base_15_Test_Over/proram modify note/4-1-1-1-1-1-1-2-1-1 GBL230-30-400-HE_SPWM_1222_TEST_PQ_DISPATCH_20150105-20150106/Release" -d"LARGE_MODEL" -ml -v28 -@"../Release.lkf" "svpwm_npc.c"
+"svpwm_npc.c", line 15: fatal error: could not open source file "svpwm_npc.h"
+1 fatal error detected in the compilation of "svpwm_npc.c".
+Compilation terminated.
+
+>> Compilation failure
+
+Build Complete,
+  227 Errors, 0 Warnings, 0 Remarks.

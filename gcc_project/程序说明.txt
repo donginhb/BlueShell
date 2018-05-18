@@ -1,0 +1,19 @@
+1、该程序为双口RAM测试程序；
+2、可对0x4101进行单独写，对0x4001进行单独读；
+3、可对0x200000进行连续写，对0x200000进行连续读（FPGA会把写的值回传给DSP）；
+4、系统时钟配置为100MHz.
+5、对外部扩展接口进行配置（片区0、片区7）
+
+6、进行ARM通讯测试、增加CRC校验
+
+7、把黄辉发的GBL230-15-380-HE_20141010-H程序中的以下文件替换：
+   svpwm_npc.h、state.h、spll_3ph_ddsrf.h、solar_f.h、rampgen_f.h、rampgen.h、park_f.h、ipark_f.h、iclark_f.h、
+
+
+在20141024测试定型基础上修改如下内容：
+1、DSP2833x_EPwm.c中（EPwm1Regs、EPwm2Regs、EPwm3Regs、EPwm4Regs）
+   EPwm1Regs.AQCTLA.bit.CAU = AQ_CLEAR;//AQ_SET;
+   EPwm1Regs.AQCTLA.bit.CAD = AQ_SET; //AQ_CLEAR;
+   EPwm1Regs.AQCTLB.bit.CBU = AQ_CLEAR;//AQ_SET;
+   EPwm1Regs.AQCTLB.bit.CBD = AQ_SET; //AQ_CLEAR;
+2、

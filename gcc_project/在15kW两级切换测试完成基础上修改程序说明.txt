@@ -1,0 +1,47 @@
+2014-11-25
+    在15kW两级切换测试完成的基础上修改以下内容：
+1、parameter.h修改内容
+   #define Iabc 622
+   #define Idc  350
+   #define Is   120
+   #define Iabc_feedback_gain     794.0
+   #define Vabc_feedback_gain     1300.0
+   #define Idc_feedback_gain      509.0
+   #define Ipv_feedback_gain      867.0              //组串电流监测增益
+#define P_Set_max 31100.0
+#define DC_Current_High 420
+#define Grid_Current_High 572
+
+
+int Ibst_Bias;                                       //  boost电流采样偏置
+
+int Ipv_Bias ;                                       // 组串电流采样偏置
+2、void Variable_Init(void)
+	Iabc_Bias = 2260;
+	Vabc_Bias = 1881;
+	Ibst_Bias = 2566;
+	Ipv_Bias  = 2259;
+	Id_ref_step = 0.00000625;
+
+3、void AD_VI()
+	Ia_Sample = (AdcMirror.ADCRESULT5)/Iabc_feedback_gain-abc_Bias/Iabc_feedback_gain;
+	Ib_Sample = (AdcMirror.ADCRESULT4)/Iabc_feedback_gain-abc_Bias/Iabc_feedback_gain;
+	Ic_Sample = (AdcMirror.ADCRESULT0)/Iabc_feedback_gain-abc_Bias/Iabc_feedback_gain;
+	Ibst1_Sample = AdcMirror.ADCRESULT11/Idc_feedback_gain-bst_Bias/Idc_feedback_gain;
+	Ibst2_Sample = AdcMirror.ADCRESULT12/Idc_feedback_gain-bst_Bias/Idc_feedback_gain;
+	Ibst3_Sample = AdcMirror.ADCRESULT13/Idc_feedback_gain-bst_Bias/Idc_feedback_gain;
+	Ipv1_Sample = PV_Amps1_R/Ipv_feedback_gain-Ipv_Bias/Ipv_feedback_gain;
+	Ipv2_Sample = PV_Amps2_R/Ipv_feedback_gain-Ipv_Bias/Ipv_feedback_gain;
+	Ipv4_Sample = PV_Amps4_R/Ipv_feedback_gain-Ipv_Bias/Ipv_feedback_gain;
+	Ipv5_Sample = PV_Amps5_R/Ipv_feedback_gain-Ipv_Bias/Ipv_feedback_gain;
+4、void ExRAM_Com_R()
+                if(Iac_ref == 0)
+		{
+		  Id_ref = 0.008;//0.35A
+		}
+		else
+		  Id_ref = Iac_ref*0.022727;  //20141028 增加 0.022727=1/44
+
+20141126
+1、更改主接触器闭合断开逻辑。
+2、delay函数修改
