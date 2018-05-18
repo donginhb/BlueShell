@@ -28,6 +28,8 @@ Uint16 ModbusRTU_RX()
 	return FALSE;
 }
 
+//test git modified
+
 Uint16 ModbusRTU_TX()
 {
 	if(RS485_Status==RS485_TX)
